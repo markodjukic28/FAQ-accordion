@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/images/background-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  background-attachment: fixed;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.container {
+  width: 550px;
+  background-color: #fff;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  color: hsl(292, 42%, 14%);
+  font-weight: 700;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.p-display {
+  color: hsl(292, 42%, 14%);
+  font-weight: 700;
+}
+
+.p-display:hover {
+  color: hsl(293, 67%, 41%);
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.hidden {
+  color: hsl(292, 16%, 49%);
+  font-size: 13px;
+  white-space: pre-line;
+  padding: 0 20px 20px 20px;
+  display: none;
+}
+
+.toggleIcon {
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 230%;
+    background-position: top center;
+    background-attachment: fixed;
+    background-color: hsl(275, 100%, 97%);
+    height: 100vh;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  .header {
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .row {
+    padding: 15px;
+  }
+
+  .p-display {
+    font-size: 14px;
+  }
+
+  .hidden {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
